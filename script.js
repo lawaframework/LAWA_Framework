@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         
 
-        window.open('https://forms.gle/CWaKx1qJS6pUPRG79', '_blank');
+        window.open('https://lawaframework.myr.id/membership/lawa-aurum', '_blank');
         // // Animasi loading pada tombol
         // const btn = form.querySelector('button');
         // const originalText = btn.innerText;
