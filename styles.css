@@ -359,6 +359,65 @@ section {
     color: var(--gold);
 }
 
+/* Free Trial Form */
+.trial-card {
+    text-align: left;
+}
+
+.input-icon .input-wrap {
+    position: relative;
+}
+
+.input-icon .input-ico {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.55;
+    font-size: 1rem;
+    pointer-events: none;
+}
+
+.input-icon .input-wrap input {
+    padding-left: 44px;
+}
+
+.checkbox-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 16px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+.checkbox-row input[type="checkbox"] {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    accent-color: var(--gold);
+    cursor: pointer;
+}
+
+.checkbox-row a {
+    color: var(--gold);
+    text-decoration: underline;
+}
+
+.checkbox-row span {
+    flex: 1;
+}
+
+.btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none !important;
+}
+
 /* Footer */
 footer {
     border-top: 1px solid var(--glass-border);
