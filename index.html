@@ -22,6 +22,7 @@
             </div>
             <ul class="nav-links">
                 <li><a href="#features">Fitur</a></li>
+                <li><a href="#free-trial">Coba Gratis</a></li>
                 <li><a href="#pricing">Harga</a></li>
                 <li><a href="https://discord.gg/2Rs8xv9V9K" target="_blank" rel="noopener">Discord</a></li>
                 <li><a href="https://t.me/lawaframework" target="_blank" rel="noopener">Telegram</a></li>
@@ -49,20 +50,79 @@
         </div>
         <div class="grid">
             <div class="glass-card feature-card">
-                <div class="feature-icon">🛡️</div>
+                <div class="feature-icon">&#x1F6E1;&#xFE0F;</div>
                 <h3>Anti-Repaint Orders</h3>
                 <p>Sinyal tidak akan pernah hilang. Menggunakan pending order terstruktur di garis breakout untuk mencegah *fake signals*.</p>
             </div>
             <div class="glass-card feature-card">
-                <div class="feature-icon">⚖️</div>
+                <div class="feature-icon">&#x2696;&#xFE0F;</div>
                 <h3>Dynamic Lot Sizing</h3>
                 <p>Otomatis menghitung Lot berdasarkan persentase risiko harian dan jarak Pips/Points (Contract Size 100).</p>
             </div>
             <div class="glass-card feature-card">
-                <div class="feature-icon">📊</div>
+                <div class="feature-icon">&#x1F4CA;</div>
                 <h3>HUD Dashboard Live</h3>
                 <p>Pantau Win Rate, Floating PnL otomatis, dan jarak Stop Loss secara real-time langsung di chart TradingView Anda.</p>
             </div>
+        </div>
+    </section>
+
+    <section id="free-trial" class="container" style="padding: 20px 0 80px;">
+        <div class="glass-card premium-border trial-card" style="max-width: 640px; margin: 0 auto; border-color: var(--gold);">
+            <div class="section-header" style="margin-bottom: 30px;">
+                <h2 style="font-size: 2rem;">Coba Gratis <span class="text-gold">7 Hari</span></h2>
+                <p>Isi data di bawah, kami aktifkan akses trial + alert Discord &amp; Telegram. <strong>1 orang hanya bisa klaim 1x trial.</strong></p>
+            </div>
+
+            <form id="trial-form">
+                <div class="input-group input-icon">
+                    <label for="tf-nama">Nama Lengkap</label>
+                    <div class="input-wrap">
+                        <span class="input-ico">&#x1F464;</span>
+                        <input type="text" id="tf-nama" name="nama" placeholder="Nama lengkap kamu" required>
+                    </div>
+                </div>
+                <div class="input-group input-icon">
+                    <label for="tf-email">Email</label>
+                    <div class="input-wrap">
+                        <span class="input-ico">&#x1F4E7;</span>
+                        <input type="email" id="tf-email" name="email" placeholder="email@kamu.com" required>
+                    </div>
+                </div>
+                <div class="input-group input-icon">
+                    <label for="tf-tv">ID TradingView</label>
+                    <div class="input-wrap">
+                        <span class="input-ico">&#x1F4C8;</span>
+                        <input type="text" id="tf-tv" name="tv_id" placeholder="Username TradingView kamu" required>
+                    </div>
+                </div>
+                <div class="input-group input-icon">
+                    <label for="tf-discord">ID Discord</label>
+                    <div class="input-wrap">
+                        <span class="input-ico">&#x1F5E8;&#xFE0F;</span>
+                        <input type="text" id="tf-discord" name="discord_id" placeholder="username_discord" required>
+                    </div>
+                </div>
+                <div class="input-group input-icon">
+                    <label for="tf-telegram">ID Telegram</label>
+                    <div class="input-wrap">
+                        <span class="input-ico">&#x2708;&#xFE0F;</span>
+                        <input type="text" id="tf-telegram" name="telegram_id" placeholder="@username_telegram" required>
+                    </div>
+                </div>
+
+                <label class="checkbox-row">
+                    <input type="checkbox" id="tf-agree-tos" required>
+                    <span>Saya sudah membaca dan menyetujui <a href="syarat.html" target="_blank" rel="noopener">Syarat &amp; Ketentuan</a> LAWA Framework.</span>
+                </label>
+                <label class="checkbox-row">
+                    <input type="checkbox" id="tf-agree-account" required>
+                    <span>Saya memahami LAWA Framework adalah alat bantu (bukan jaminan profit), dan disarankan menggunakan akun <strong>DEMO atau CENT</strong> selama masa trial 7 hari.</span>
+                </label>
+
+                <button type="submit" id="tf-submit" class="btn btn-gold-large w-100" disabled>Klaim Trial 7 Hari</button>
+                <p id="tf-status" class="form-status" style="min-height: 20px;"></p>
+            </form>
         </div>
     </section>
 
@@ -76,7 +136,7 @@
             <div class="pricing-card glass-card premium-border" style="border-color: var(--gold);">
                 <div class="pricing-header">
                     <h3>LAWA Framework AURUM</h3>
-                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 4px;">Indikator — Mandu Manual</p>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 4px;">Indikator &#x2014; Mandu Manual</p>
                     <div class="price" style="display: flex; flex-direction: column; align-items: center; margin-top: 16px;">
                         <span class="new-price" style="font-size: 32px;">
                             Rp 249.000
@@ -88,21 +148,21 @@
                 <img src="assets/lawa-aurum-hud.png" alt="LAWA Framework AURUM - HUD live di TradingView" style="width: 100%; border-radius: 10px; border: 1px solid rgba(255,215,0,0.25); margin-bottom: 18px;">
 
                 <ul class="pricing-features">
-                    <li>✔️ Aba-aba trading langsung di chart (PLACE ORDER → RUNNING → TP/SL)</li>
-                    <li>✔️ HUD live: Win Rate, PnL, Lot Suggestion</li>
-                    <li>✔️ Cocok untuk trader manual & pemula</li>
-                    <li>✔️ Sistem Subscription Bulanan, berhenti kapan saja</li>
+                    <li>&#x2714;&#xFE0F; Aba-aba trading langsung di chart (PLACE ORDER &#x2192; RUNNING &#x2192; TP/SL)</li>
+                    <li>&#x2714;&#xFE0F; HUD live: Win Rate, PnL, Lot Suggestion</li>
+                    <li>&#x2714;&#xFE0F; Cocok untuk trader manual & pemula</li>
+                    <li>&#x2714;&#xFE0F; Sistem Subscription Bulanan, berhenti kapan saja</li>
                 </ul>
 
                 <a href="https://lawaframework.myr.id/membership/lawa-aurum" target="_blank" rel="noopener" class="btn btn-gold-large w-100">Langganan Sekarang</a>
-                <a href="https://www.tradingview.com/script/qktFe1lc-LAWA-Framework-AURUM/" target="_blank" rel="noopener" style="display:block; margin-top: 14px; font-size: 0.9rem; color: var(--text-muted); text-align:center;">Lihat indikator di TradingView →</a>
+                <a href="https://www.tradingview.com/script/qktFe1lc-LAWA-Framework-AURUM/" target="_blank" rel="noopener" style="display:block; margin-top: 14px; font-size: 0.9rem; color: var(--text-muted); text-align:center;">Lihat indikator di TradingView &#x2192;</a>
             </div>
 
             <!-- Strategy Card -->
             <div class="pricing-card glass-card premium-border" style="border-color: var(--gold);">
                 <div class="pricing-header">
                     <h3>LAWA Framework Strategy</h3>
-                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 4px;">Strategy — Backtest & Otomasi</p>
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-top: 4px;">Strategy &#x2014; Backtest & Otomasi</p>
                     <div class="price" style="display: flex; flex-direction: column; align-items: center; margin-top: 16px;">
                         <span class="old-price">Rp 1.249.000</span>
                         <span class="new-price" style="font-size: 32px;">
@@ -112,21 +172,20 @@
                     </div>
                 </div>
 
-                <img src="assets/lawa-framework-strategy.png" alt="LAWA Framework AURUM - HUD live di TradingView" style="width: 100%; border-radius: 10px; border: 1px solid rgba(255,215,0,0.25); margin-bottom: 18px;">
-
                 <ul class="pricing-features">
-                    <li>✔️ Backtest ter-audit di TradingView Strategy Tester</li>
-                    <li>✔️ Cocok untuk trader Propfirm (atur Risk % sesuai limit firm)</li>
-                    <li>✔️ Akses invite-only SELAMANYA, sekali bayar</li>
+                    <li>&#x2714;&#xFE0F; Backtest ter-audit di TradingView Strategy Tester</li>
+                    <li>&#x2714;&#xFE0F; Win Rate 59.13% &#xB7; Profit Factor 1.294 &#xB7; Max DD 6.51%</li>
+                    <li>&#x2714;&#xFE0F; Cocok untuk trader Propfirm (atur Risk % sesuai limit firm)</li>
+                    <li>&#x2714;&#xFE0F; Akses invite-only SELAMANYA, sekali bayar</li>
                 </ul>
 
                 <a href="https://lawaframework.myr.id/catalog/lawa-framework-strategy-xauusd-m15-lifetime-access/" target="_blank" rel="noopener" class="btn btn-gold-large w-100">Beli Akses Lifetime</a>
-                <a href="https://www.tradingview.com/script/TxLyqb81-LAWA-Framework-AURUM-Strategy/" target="_blank" rel="noopener" style="display:block; margin-top: 14px; font-size: 0.9rem; color: var(--text-muted); text-align:center;">Lihat script di TradingView →</a>
+                <a href="https://www.tradingview.com/script/I3wSu2AJ-LAWA-Framework-AURUM-Strategy/" target="_blank" rel="noopener" style="display:block; margin-top: 14px; font-size: 0.9rem; color: var(--text-muted); text-align:center;">Lihat script di TradingView &#x2192;</a>
             </div>
         </div>
 
         <div class="glass-card" style="max-width: 800px; margin: 40px auto 0; border-color: rgba(255,215,0,0.2);">
-            <h3 style="color: var(--gold); font-size: 1.1rem; margin-bottom: 12px;">⚠️ Beda Indikator vs Strategy</h3>
+            <h3 style="color: var(--gold); font-size: 1.1rem; margin-bottom: 12px;">&#x26A0;&#xFE0F; Beda Indikator vs Strategy</h3>
             <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 8px;"><strong style="color: var(--text-main);">Indikator</strong> = alat mandu manual. Aba-aba muncul langsung di chart, kamu yang eksekusi sendiri.</p>
             <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 8px;"><strong style="color: var(--text-main);">Strategy</strong> = versi backtest + otomasi. Dijalankan di TradingView Strategy Tester untuk melihat performa yang ter-audit (Win Rate, Drawdown, Profit Factor).</p>
             <p style="color: var(--text-muted); font-size: 0.85rem; margin-top: 12px;">Sistem yang sama, beda cara pakai. Ini alat bantu, bukan jaminan profit. Hasil backtest = performa masa lalu, bukan jaminan masa depan. Trading berisiko tinggi.</p>
@@ -148,17 +207,17 @@
     <section id="proof" class="container" style="padding: 20px 0 60px;">
         <div class="section-header">
             <h2>Bukan Cuma Klaim, <span class="text-gold">Terverifikasi</span></h2>
-            <p>Forward test real di akun demo, dipantau live oleh pihak ketiga independen — Myfxbook.</p>
+            <p>Forward test real di akun demo, dipantau live oleh pihak ketiga independen &#x2014; Myfxbook.</p>
         </div>
         <div class="glass-card premium-border" style="max-width: 700px; margin: 0 auto; border-color: var(--gold); text-align: center;">
             <p style="color: var(--text-muted); margin-bottom: 20px;">
                 Semua periode ditampilkan apa adanya, termasuk saat profit maupun saat drawdown. Bukan cherry-picking angka bagus doang.
             </p>
-            <a href="https://www.myfxbook.com/members/LAWAFramework/lawa-framework-aurum-indicator/12102007" target="_blank" rel="noopener" class="btn btn-gold-large w-100">
-                Lihat Live Track Record di Myfxbook →
+            <a href="https://www.myfxbook.com/members/LAWAFramework/lawa-framework-test/12097793" target="_blank" rel="noopener" class="btn btn-gold-large w-100">
+                Lihat Live Track Record di Myfxbook &#x2192;
             </a>
             <p style="margin-top: 16px; font-size: 13px; color: var(--text-muted);">
-                Akun cent JustMarkets &middot; Update live &middot; Verified by Myfxbook
+                Akun demo Exness &middot; Update live &middot; Verified oleh Myfxbook
             </p>
         </div>
     </section>
@@ -170,9 +229,9 @@
             <a href="#pricing" class="btn btn-gold-large w-100">Lihat Produk</a>
             <p style="margin-top: 18px; font-size: 14px; color: #AAA; font-weight: 300;">
                 Belum siap langganan? Gabung komunitas gratis:
-                <a href="https://discord.gg/2Rs8xv9V9K" target="_blank" rel="noopener" style="color: var(--gold); font-weight: 600;">Discord →</a>
+                <a href="https://discord.gg/2Rs8xv9V9K" target="_blank" rel="noopener" style="color: var(--gold); font-weight: 600;">Discord &#x2192;</a>
                 &nbsp;
-                <a href="https://t.me/lawaframework" target="_blank" rel="noopener" style="color: var(--gold); font-weight: 600;">Telegram →</a>
+                <a href="https://t.me/lawaframework" target="_blank" rel="noopener" style="color: var(--gold); font-weight: 600;">Telegram &#x2192;</a>
             </p>
         </div>
     </section>
@@ -183,7 +242,7 @@
                 <img src="assets/logo_dark_alpha.jpg" alt="LAWA AURUM Logo" style="border-radius: 4px;">
                 <span>LAWA Framework</span>
             </div>
-            <p>© 2026 LAWA Framework. All Rights Reserved.</p>
+            <p>&#xA9; 2026 LAWA Framework. All Rights Reserved.</p>
             <p style="margin-top: 8px;"><a href="syarat.html" style="color: var(--gold); text-decoration: none; font-size: 14px;">Syarat &amp; Ketentuan</a></p>
         </div>
     </footer>
